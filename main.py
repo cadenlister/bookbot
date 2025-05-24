@@ -10,7 +10,7 @@ def get_book_text(filepath):
 
 def main():
     if len(sys.argv) < 2:
-        print("When running this program include the path to the book to be used. I.E. python3 main.py books/mobydick.txt")
+        print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
     else:
         word_library = {}
