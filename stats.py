@@ -25,9 +25,8 @@ def word_sort(words): #takes a dictionary as an input and then creates a list of
         name_dict["num"] = v
         dict_list.append(name_dict)
         name_dict={}
-    print(dict_list)
     dict_list.sort(reverse=True, key=sorting)
-    print (dict_list)
+    #print (dict_list)
     return dict_list
         
     

@@ -14,8 +14,23 @@ def main():
     count_word = count_words(book_text)
     word_library = count_characters(book_text)
     sorted_words = word_sort(word_library)
-    #print (f"{count_word} words found in the document")
-    #print (f"{word_library} words found in the document")
+    
+    print("============ BOOKBOT ============")
+    print("Analyzing book found at books/frankenstein.txt...")
+    print("----------- Word Count ----------")
+    print(f"Found {count_word} total words")
+    print("--------- Character Count -------")
+
+    
+    for sort in sorted_words:
+        letter = sort["char"]
+        count = sort["num"]
+        if letter.isalpha():
+            print(f"{letter}: {count}")
+        else:
+            None
+            
+    print("============= END ===============")
     
 
 
